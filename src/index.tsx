@@ -29,17 +29,4 @@ app.get('/archlinux/chaotic-aur/*', async (c) => {
   }
 });
 
-app.get('/archlinux/atri/*', async (c) => {
-  const url = new URL(c.req.url);
-  const path = url.pathname.replace('/archlinux/atri/', '');
-  const ext = path.split('.').pop();
-
-  if (ext === 'sig' || ext === 'html' || path.includes('.') === false) {
-    return c.redirect(`https://repo.apeiria.net/${path}`);
-  }
-  else {
-    return c.redirect(`https://files.m.daocloud.io/repo.apeiria.net/${path}`);
-  }
-});
-
 export default app;

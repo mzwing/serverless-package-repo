@@ -11,7 +11,6 @@ Still under development, use with caution.
 ## Currently Provide / 目前提供
 
 - [chaotic-aur](https://aur.chaotic.cx/)
-- [atri](https://github.com/Misaka13514-AUR/PKGBUILDs)
 
 ## How to use / 食用方法
 
@@ -24,13 +23,6 @@ Edit `/etc/pacman.conf`.
 ```conf
 [chaotic-aur]
 Server = https://packages.services.mzwing.eu.org/archlinux/$repo/$repo/$arch
-```
-
-### atri
-
-```conf
-[atri]
-Server = https://packages.services.mzwing.eu.org/archlinux/$repo/$arch
 ```
 
 ## License / 开源协议
