@@ -23,14 +23,14 @@ Edit `/etc/pacman.conf`.
 
 ```conf
 [chaotic-aur]
-Server = https://packages.services.mzwing.eu.org/archlinux/$repo/$repo/$arch
+Server = https://packages.service.mzwing.eu.org/archlinux/$repo/$repo/$arch
 ```
 
 ### atri
 
 ```conf
 [atri]
-Server = https://packages.services.mzwing.eu.org/archlinux/$repo/$arch
+Server = https://packages.service.mzwing.eu.org/archlinux/$repo/$arch
 ```
 
 ## License / 开源协议
