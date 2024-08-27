@@ -10,17 +10,17 @@ importers:
     dependencies:
       hono:
         specifier: ^4.4.13
-        version: 4.5.8
+        version: 4.5.9
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20240712.0
         version: 4.20240821.1
       '@hono/vite-cloudflare-pages':
         specifier: ^0.4.2
-        version: 0.4.2(hono@4.5.8)
+        version: 0.4.2(hono@4.5.9)
       '@hono/vite-dev-server':
         specifier: ^0.14.0
-        version: 0.14.0(hono@4.5.8)
+        version: 0.14.0(hono@4.5.9)
       vite:
         specifier: ^5.3.3
         version: 5.4.2(@types/node@22.5.0)
@@ -617,8 +617,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.5.8:
-    resolution: {integrity: sha512-pqpSlcdqGkpTTRpLYU1PnCz52gVr0zVR9H5GzMyJWuKQLLEBQxh96q45QizJ2PPX8NATtz2mu31/PKW/Jt+90Q==}
+  hono@4.5.9:
+    resolution: {integrity: sha512-zz8ktqMDRrZETjxBrv8C5PQRFbrTRCLNVAjD1SNQyOzv4VjmX68Uxw83xQ6oxdAB60HiWnGEatiKA8V3SZLDkQ==}
     engines: {node: '>=16.0.0'}
 
   is-binary-path@2.1.0:
@@ -1048,14 +1048,14 @@ snapshots:
 
   '@hono/node-server@1.12.0': {}
 
-  '@hono/vite-cloudflare-pages@0.4.2(hono@4.5.8)':
+  '@hono/vite-cloudflare-pages@0.4.2(hono@4.5.9)':
     dependencies:
-      hono: 4.5.8
+      hono: 4.5.9
 
-  '@hono/vite-dev-server@0.14.0(hono@4.5.8)':
+  '@hono/vite-dev-server@0.14.0(hono@4.5.9)':
     dependencies:
       '@hono/node-server': 1.12.0
-      hono: 4.5.8
+      hono: 4.5.9
       miniflare: 3.20240806.0
       minimatch: 9.0.5
     transitivePeerDependencies:
@@ -1273,7 +1273,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.5.8: {}
+  hono@4.5.9: {}
 
   is-binary-path@2.1.0:
     dependencies:
