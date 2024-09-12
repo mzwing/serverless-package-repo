@@ -10,17 +10,17 @@ importers:
     dependencies:
       hono:
         specifier: ^4.4.13
-        version: 4.5.11
+        version: 4.6.1
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20240712.0
         version: 4.20240909.0
       '@hono/vite-cloudflare-pages':
         specifier: ^0.4.2
-        version: 0.4.2(hono@4.5.11)
+        version: 0.4.2(hono@4.6.1)
       '@hono/vite-dev-server':
         specifier: ^0.16.0
-        version: 0.16.0(hono@4.5.11)(miniflare@3.20240821.2)(wrangler@3.76.0(@cloudflare/workers-types@4.20240909.0))
+        version: 0.16.0(hono@4.6.1)(miniflare@3.20240821.2)(wrangler@3.76.0(@cloudflare/workers-types@4.20240909.0))
       vite:
         specifier: ^5.3.3
         version: 5.4.4(@types/node@22.5.4)
@@ -592,8 +592,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.5.11:
-    resolution: {integrity: sha512-62FcjLPtjAFwISVBUshryl+vbHOjg8rE4uIK/dxyR8GpLztunZpwFmfEvmJCUI7xoGh/Sr3CGCDPCmYxVw7wUQ==}
+  hono@4.6.1:
+    resolution: {integrity: sha512-6NGwvttY1+HAFii08VYiEKI6ETPAFbpLntpm2M/MogEsAFWdZV74UNT+2M4bmqX90cIQhjlpBSP+tO+CfB0uww==}
     engines: {node: '>=16.0.0'}
 
   is-binary-path@2.1.0:
@@ -996,18 +996,18 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@hono/node-server@1.12.2(hono@4.5.11)':
+  '@hono/node-server@1.12.2(hono@4.6.1)':
     dependencies:
-      hono: 4.5.11
+      hono: 4.6.1
 
-  '@hono/vite-cloudflare-pages@0.4.2(hono@4.5.11)':
+  '@hono/vite-cloudflare-pages@0.4.2(hono@4.6.1)':
     dependencies:
-      hono: 4.5.11
+      hono: 4.6.1
 
-  '@hono/vite-dev-server@0.16.0(hono@4.5.11)(miniflare@3.20240821.2)(wrangler@3.76.0(@cloudflare/workers-types@4.20240909.0))':
+  '@hono/vite-dev-server@0.16.0(hono@4.6.1)(miniflare@3.20240821.2)(wrangler@3.76.0(@cloudflare/workers-types@4.20240909.0))':
     dependencies:
-      '@hono/node-server': 1.12.2(hono@4.5.11)
-      hono: 4.5.11
+      '@hono/node-server': 1.12.2(hono@4.6.1)
+      hono: 4.6.1
       minimatch: 9.0.5
     optionalDependencies:
       miniflare: 3.20240821.2
@@ -1221,7 +1221,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.5.11: {}
+  hono@4.6.1: {}
 
   is-binary-path@2.1.0:
     dependencies:
