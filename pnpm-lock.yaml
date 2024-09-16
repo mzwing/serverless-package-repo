@@ -23,7 +23,7 @@ importers:
         version: 0.16.0(hono@4.6.3)(miniflare@3.20240909.1)(wrangler@3.78.2(@cloudflare/workers-types@4.20240909.0))
       vite:
         specifier: ^5.3.3
-        version: 5.4.5(@types/node@22.5.5)
+        version: 5.4.6(@types/node@22.5.5)
       wrangler:
         specifier: ^3.64.0
         version: 3.78.2(@cloudflare/workers-types@4.20240909.0)
@@ -672,8 +672,8 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
-  postcss@8.4.45:
-    resolution: {integrity: sha512-7KTLTdzdZZYscUc65XmjFiB73vBhBfbPztCYdUNvlaso9PrzjzcmjqBPR0lNGkcVlcO4BjiO5rK/qNz+XAen1Q==}
+  postcss@8.4.47:
+    resolution: {integrity: sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   printable-characters@1.0.42:
@@ -753,8 +753,8 @@ packages:
   unenv-nightly@2.0.0-1724863496.70db6f1:
     resolution: {integrity: sha512-r+VIl1gnsI4WQxluruSQhy8alpAf1AsLRLm4sEKp3otCyTIVD6I6wHEYzeQnwsyWgaD4+3BD4A/eqrgOpdTzhw==}
 
-  vite@5.4.5:
-    resolution: {integrity: sha512-pXqR0qtb2bTwLkev4SE3r4abCNioP3GkjvIDLlzziPpXtHgiJIjuKl+1GN6ESOT3wMjG3JTeARopj2SwYaHTOA==}
+  vite@5.4.6:
+    resolution: {integrity: sha512-IeL5f8OO5nylsgzd9tq4qD2QqI0k2CQLGrWD0rCN0EQJZpBK5vJAx0I+GDkMOXxQX/OfFHMuLIx6ddAxGX/k+Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -1293,7 +1293,7 @@ snapshots:
 
   picomatch@2.3.1: {}
 
-  postcss@8.4.45:
+  postcss@8.4.47:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.1.0
@@ -1390,10 +1390,10 @@ snapshots:
       pathe: 1.1.2
       ufo: 1.5.4
 
-  vite@5.4.5(@types/node@22.5.5):
+  vite@5.4.6(@types/node@22.5.5):
     dependencies:
       esbuild: 0.21.5
-      postcss: 8.4.45
+      postcss: 8.4.47
       rollup: 4.21.3
     optionalDependencies:
       '@types/node': 22.5.5
