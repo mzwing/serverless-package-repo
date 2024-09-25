@@ -23,7 +23,7 @@ importers:
         version: 0.16.0(hono@4.6.3)(miniflare@3.20240909.5)(wrangler@3.78.8(@cloudflare/workers-types@4.20240924.0))
       vite:
         specifier: ^5.3.3
-        version: 5.4.7(@types/node@22.6.1)
+        version: 5.4.8(@types/node@22.6.1)
       wrangler:
         specifier: ^3.64.0
         version: 3.78.8(@cloudflare/workers-types@4.20240924.0)
@@ -753,8 +753,8 @@ packages:
   unenv-nightly@2.0.0-20240919-125358-9a64854:
     resolution: {integrity: sha512-XjsgUTrTHR7iw+k/SRTNjh6EQgwpC9voygnoCJo5kh4hKqsSDHUW84MhL9EsHTNfLctvVBHaSw8e2k3R2fKXsQ==}
 
-  vite@5.4.7:
-    resolution: {integrity: sha512-5l2zxqMEPVENgvzTuBpHer2awaetimj2BGkhBPdnwKbPNOlHsODU+oiazEZzLK7KhAnOrO+XGYJYn4ZlUhDtDQ==}
+  vite@5.4.8:
+    resolution: {integrity: sha512-FqrItQ4DT1NC4zCUqMB4c4AZORMKIa0m8/URVCZ77OZ/QSNeJ54bU1vrFADbDsuwfIPcgknRkmqakQcgnL4GiQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -1390,7 +1390,7 @@ snapshots:
       pathe: 1.1.2
       ufo: 1.5.4
 
-  vite@5.4.7(@types/node@22.6.1):
+  vite@5.4.8(@types/node@22.6.1):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.47
