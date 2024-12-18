@@ -6,7 +6,8 @@ const app = new Hono();
 app.use(renderer);
 
 app.get('/', (c) => {
-  return c.render(<h1>Hello!</h1>)
+  // return c.render(<h1></h1>)
+  return c.redirect(`https://github.com/mzwing/serverless-package-repo`);
 });
 
 app.get('/archlinux/chaotic-aur/*', async (c) => {
@@ -19,16 +20,20 @@ app.get('/archlinux/chaotic-aur/*', async (c) => {
     const data = await response.text();
     return c.body(data, 200, { 'Content-Type': 'text/html' });
   }
-  else if (ext === 'sig') {
+  // else if (ext === 'sig') {
+  else {
     const response = await fetch(`https://geo-mirror.chaotic.cx/${path}`);
     const data = await response.text();
     return c.body(data);
   }
+  /*
   else {
     return c.redirect(`https://files.m.daocloud.io/geo-mirror.chaotic.cx/${path}`);
   }
+  */
 });
 
+/*
 app.get('/archlinux/atri/*', async (c) => {
   const url = new URL(c.req.url);
   const path = url.pathname.replace('/archlinux/atri/', '');
@@ -41,5 +46,6 @@ app.get('/archlinux/atri/*', async (c) => {
     return c.redirect(`https://files.m.daocloud.io/arch-repo.moeneko.workers.dev/${path}`);
   }
 });
+*/
 
 export default app;
