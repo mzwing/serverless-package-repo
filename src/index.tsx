@@ -30,7 +30,7 @@ app.get('/archlinux/chaotic-aur/*', async (c) => {
     });
   }
   else {
-    return c.redirect(`https://files.m.daocloud.io/geo-mirror.chaotic.cx/${path}`);
+    return c.redirect(`https://files.m.daocloud.io/geo-mirror.chaotic.cx/${path}`, 307);
   }
 });
 
@@ -40,10 +40,10 @@ app.get('/archlinux/atri/*', async (c) => {
   const ext = path.split('.').pop();
 
   if (ext === 'sig' || ext === 'html' || path.includes('.') === false) {
-    return c.redirect(`https://repo.apeiria.net/${path}`);
+    return c.redirect(`https://repo.apeiria.net/${path}`, 307);
   }
   else {
-    return c.redirect(`https://files.m.daocloud.io/arch-repo.moeneko.workers.dev/${path}`);
+    return c.redirect(`https://files.m.daocloud.io/arch-repo.moeneko.workers.dev/${path}`, 307);
   }
 });
 
