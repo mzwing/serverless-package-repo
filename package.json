@@ -1,5 +1,5 @@
 {
-  "name": "serverless-package-repo",
+  "name": "lite-package",
   "type": "module",
   "scripts": {
     "dev": "vite",

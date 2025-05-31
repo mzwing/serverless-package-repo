@@ -1,4 +1,4 @@
-# Serverless Package Repo
+# LitePackage
 
 Serverless can also build a package repo!
 

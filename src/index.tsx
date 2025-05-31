@@ -7,7 +7,7 @@ app.use(renderer);
 
 app.get('/', (c) => {
   // return c.render(<h1></h1>)
-  return c.redirect(`https://github.com/mzwing/serverless-package-repo`);
+  return c.redirect(`https://github.com/LiteUni/lite-package`);
 });
 
 app.get('/archlinux/chaotic-aur/*', async (c) => {
@@ -15,11 +15,6 @@ app.get('/archlinux/chaotic-aur/*', async (c) => {
   const path = url.pathname.replace('/archlinux/chaotic-aur/', '');
   const ext = path.split('.').pop();
 
-  // if (ext === 'html' || path.includes('.') === false) {
-  //   const response = await fetch(`https://geo-mirror.chaotic.cx/${path}`);
-  //   const data = await response.text();
-  //   return c.body(data, 200, { 'Content-Type': 'text/html' });
-  // }
   if (ext === 'html' || path.includes('.') === false) {
     const response = await fetch(`https://geo-mirror.chaotic.cx/${path}`);
     return new Response(response.body, {
@@ -28,7 +23,6 @@ app.get('/archlinux/chaotic-aur/*', async (c) => {
     });
   }
   else if (ext === 'sig') {
-    // else {
     const response = await fetch(`https://geo-mirror.chaotic.cx/${path}`);
     return new Response(response.body, {
       status: response.status,
