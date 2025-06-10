@@ -30,7 +30,13 @@ app.get('/archlinux/chaotic-aur/*', async (c) => {
     });
   }
   else {
-    return c.redirect(`https://files.m.daocloud.io/geo-mirror.chaotic.cx/${path}`, 307);
+    const response = await fetch(`https://files.m.daocloud.io/geo-mirror.chaotic.cx/${path}`, {
+      redirect: 'manual'
+    });
+    return new Response(response.body, {
+      status: response.status,
+      headers: response.headers
+    });
   }
 });
 
